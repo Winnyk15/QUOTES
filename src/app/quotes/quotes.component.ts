@@ -8,8 +8,8 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes: Quote[]=[
-    new Quote(1, 'Do not be afraid of starting over again. This time, you are not starting from scratch, you are starting from experience, 'Jagrid', 'Hawkins Muriithi', new Date(2020,8,20)),
-    new Quote(2, 'If you dont understand the details of your own business you are going to fail.', 'Jeff Bezos', 'Anonymous', new Date(2020,6,12))
+    new Quote(1, 'Do not be afraid of starting over again. This time, you are not starting from scratch, you are starting from experience, 'Jagrid', 'Hawkins Muriithi', new Date(2020.8.20))
+    new Quote(2, 'If you dont understand the details of your own business you are going to fail.', 'Jeff Bezos', 'Anonymous', new Date(2020.6.12))
   ];
 
   details(index){
