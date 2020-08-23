@@ -9,20 +9,15 @@ import { Quote } from '../quote'
 })
 export class QuotesDetailComponent implements OnInit {
   @Input() quote: Quote;
-  @Output() seen = new EventEmitter<boolean>();
+  @Output() deleteQuote: EventEmitter<Quote> = new EventEmitter ();
 
-  numberOfLikes : number = 0;
-  numberOfHates : number = 0;
+  numberOfVotes : number = 0;
 
-  deleteQuote(isSeen:boolean){
-    this.seen.emit(isSeen);
+  upVoteClick(){
+    this.numberOfVotes++;
   }
-
-  upVote(){
-    this.numberOfLikes++;
-  }
-  downVote(){
-    this.numberOfHates++;
+  downVoteClick(){
+    this.numberOfVotes--;
   }
 
   constructor() { }
