@@ -1,0 +1,11 @@
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid black;
+}
+
+h2 {
+    font-family: 'VT323', monospace;
+    color: orange;
+    font-size: 60px;
+    font-weight: 900;
+}
