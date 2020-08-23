@@ -1,8 +1,8 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
 
 html,
 body {
-    font-family : 'Muli';
+    font-family: 'Muli';
 }
 
 body {
