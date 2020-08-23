@@ -8,8 +8,8 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes: Quote[]=[
-    new Quote(1, 'One, remember to look up at the stars and not down at your feet. Two, never give up work. Work gives you meaning and purpose and life is empty without it. Three, if you are lucky enough to find love, remember it is there and don not throw it away.', 'Stephen Hawking', 'Linda Maina', new Date(2018,2,2)),
-    new Quote(2, 'The price good men pay for indifference to public affairs is to be ruled by evil men.', 'Plato', 'Anonymous', new Date(2018,1,2))
+    new Quote(1, 'All our dreams can come true if we have the courage to pursue them.', 'Walt Disney', 'Winnie Kahendah', new Date(2020,2,2)),
+    new Quote(2, 'The secret of getting ahead is getting started.', 'Mark Twain', 'Anonymous', new Date(2020,1,2))
   ];
 
 
