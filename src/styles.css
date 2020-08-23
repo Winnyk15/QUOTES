@@ -1,1 +1,14 @@
 @import "~bootstrap/dist/css/bootstrap.css"
+
+html,
+body {
+    font-family : 'Muli';
+}
+
+body {
+    background-image: url("../src/assets/bottle.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
