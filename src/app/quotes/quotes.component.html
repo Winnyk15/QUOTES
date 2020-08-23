@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <br>
-                <app-quote-details *ngIf='quote.showDetail' [quote]='quote' (seen)='hideQuote($event,i)'></app-quote-details>
+                <app-quotes-detail *ngIf='quote.showDetail' [quote]='quote' (seen)='hideQuote($event,i)'></app-quotes-detail>
             </div>
         </div>
         <div class="offset-1 col-md-5">
