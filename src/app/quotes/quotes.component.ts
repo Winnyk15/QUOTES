@@ -12,6 +12,15 @@ export class QuotesComponent implements OnInit {
     new Quote(2, 'The secret of getting ahead is getting started.', 'Mark Twain', 'Anonymous', new Date(2020,1,2))
   ];
 
+  numberOfVotes : number = 0;
+
+  upVoteClick(){
+    this.numberOfVotes++;
+  }
+  downVoteClick(){
+    this.numberOfVotes--;
+  }
+
 
   details(index){
     this.quotes[index].showDetail = !this.quotes[index].showDetail;
