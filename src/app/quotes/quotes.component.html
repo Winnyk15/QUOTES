@@ -12,13 +12,14 @@
                             <footer class="blockquote-footer">{{quote.author}} <br>
                                 <!-- <button (click)='details(i)' class="btn btn-dark text-warning float-right">See more</button> -->
                                 {{numberOfVotes}}
-                                <button class="btnUpVote" (click)="UpVoteClick()">Yes
-                                    <svg class="bi bi-arrow-up-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="green" xmlns="http://www.w3.org/2000/svg"></svg>
-                                </button> 
-                                <button class="btnDownVote" (click)="downVoteClick()">No
+                                
+                                <button class="btn-DownVote-dark" (click)="upVoteClick()">Yes
                                     <svg class="bi bi-arrow-down-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="red" xmlns="http://www.w3.org/2000/svg"></svg>
                                 </button>
-                                <button (click)="onDelete(quote)" class="del">trash
+                                <button class="btn-DownVote-dark" (click)="downVoteClick()">No
+                                    <svg class="bi bi-arrow-down-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="red" xmlns="http://www.w3.org/2000/svg"></svg>
+                                </button>
+                                <button (click)="onDelete(quote)" class="btn-del-dark">Trash
                                     <svg class="bi bi-trash-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="orange" xmlns="http://www.w3.org/2000/svg"></svg>
                                 </button> 
                             </footer>
