@@ -1,18 +1,3 @@
-<div class="d-flex justify-content-around">
-    <button class="btnUpVote" (click)="upVoteClick()">Yes
-        <svg class="bi bi-arrow-up-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="blue" xmlns="http://www.w3.org/2000/svg">
-        </svg> 
-        <span>&nbsp;{{numberOfVotes}}</span>
-    </button>
-    <button class="btnDownVote" (click)="downVoteClick()">No
-        <svg class="bi bi-arrow-down-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="purple" xmlns="http://www.w3.org/2000/svg">
-        </svg> 
-        <span>&nbsp;{{numberOfVotes}}</span>
-    </button>
-    <button class="del">trash (click)='onDeleteQuote(quote)'>
-        <svg class="bi bi-trash-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="green" xmlns="http://www.w3.org/2000/svg">
-        </svg>
-    </button>
-</div>
+
 <span class="text-muted"> &nbsp;&nbsp; Posted by: {{quote.submitName}} on {{quote.postDate|date}}</span><br>
 <h5 class="text-muted"> &nbsp;&nbsp;{{quote.postDate|timeCount}}</h5>

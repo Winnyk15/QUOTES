@@ -9,8 +9,18 @@
                         <svg class="bi bi-person-bounding-box text-left wrap" width="3em" height="3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         </svg>
                         <blockquote class="blockquote mb-0 text-center">"{{quote.text}}" <br>
-                            <footer class="blockquote-footer">{{quote.author}}
-                                <button (click)='details(i)' class="btn btn-dark text-warning float-right">See more</button>
+                            <footer class="blockquote-footer">{{quote.author}} <br>
+                                <!-- <button (click)='details(i)' class="btn btn-dark text-warning float-right">See more</button> -->
+                                {{numberOfVotes}}
+                                <button class="btnUpVote" (click)="UpVoteClick()">Yes
+                                    <svg class="bi bi-arrow-up-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="green" xmlns="http://www.w3.org/2000/svg"></svg>
+                                </button> 
+                                <button class="btnDownVote" (click)="downVoteClick()">No
+                                    <svg class="bi bi-arrow-down-circle-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="red" xmlns="http://www.w3.org/2000/svg"></svg>
+                                </button>
+                                <button (click)="onDelete(quote)" class="del">trash
+                                    <svg class="bi bi-trash-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="orange" xmlns="http://www.w3.org/2000/svg"></svg>
+                                </button> 
                             </footer>
                         </blockquote>
                     </div>
