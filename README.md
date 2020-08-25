@@ -33,3 +33,5 @@ Incase of any bugs don't hesitate to reach out to me. Email: kahendahwinnie@gmai
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 ## License
 MIT
+
+Link to the deployed site: https://winnyk15.github.io/QUOTES/
